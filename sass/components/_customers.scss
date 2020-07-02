@@ -1,0 +1,132 @@
+.customers-title {
+  color: $title-text-color;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0px;
+  padding-top: 60px;
+}
+
+/*@media screen and (max-width: 767px) {
+  .customers-title {
+    //padding-top: 60px;
+  }
+}*/
+
+.customers-list {
+  display: block;
+  padding-left: 0px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /*display: flex;
+  padding-left: 0px;*/
+  /*padding-bottom: 94px;*/
+  /*justify-content: space-between;*/
+  margin: 0 -15px;
+  & .item {
+    margin-top: 30px;
+    margin-right: 0px;
+  }
+
+  @media screen and (min-width: 468px) {
+    & .item {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+}
+
+/*@media screen and (min-width: 768px) {
+    & .item {
+      margin-right: 0px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & .item:last-child {
+      margin-right: 0px;
+    }
+  }
+}*/
+
+.customers-list .link {
+  //margin-top: 30px;
+  display: flex;
+  /*align-items: center;
+  justify-content: center;*/
+  padding: 0;
+  border: 2px solid $icon-color;
+  width: 210px;
+  height: 90px;
+  color: $icon-color;
+  border-radius: 4px;
+  transition: color 250ms $timing-function, border-color 250ms $timing-function;
+}
+
+.customers-list .link {
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+/*@media screen and (min-width: 480px) {
+  /*.customers-list .item {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .customers-list .item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers-list .link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-list .link {
+    width: 170px;
+  }
+}*/
+
+/*@media screen and (min-width: 768px) {
+  .customers-list .item {
+    width: 30%;
+  }
+}*/
+
+/*.customers-list .item:not(:last-child) {
+  margin-right: 30px;
+}*/
+
+/*ховер на постоянных клиентах 01.06.20*/
+
+.customers-list .link:hover,
+.customers-list .link:focus {
+  color: $accent-color;
+  border-color: $accent-color;
+}
+
+// центрирование картинок клиентов
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// центрирование иконок клиентов
+.item .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

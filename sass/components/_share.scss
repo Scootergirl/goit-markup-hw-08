@@ -1,0 +1,24 @@
+.page {
+  /*@media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  margin-left: auto;
+  margin-right: auto;*/
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $main-font;
+}
+
+/*убираем подчеркивание у ссылок*/
+.link {
+  text-decoration: none;
+}
+
+.link {
+  @extend %link;
+}
+
+/*убираем маркировку списка*/
+li {
+  list-style-type: none;
+}

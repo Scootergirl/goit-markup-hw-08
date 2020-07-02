@@ -1,0 +1,69 @@
+@media screen and (max-width: 1199px) {
+  .doing {
+    display: none;
+  }
+}
+
+.doing-img {
+  width: 370px;
+}
+
+.doing-list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.doing-list .box:not(:last-child) {
+  margin-right: 30px;
+}
+
+.box {
+  margin-top: 50px;
+  padding-bottom: 94px;
+  border-radius: 8px;
+  .link {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+/*Позиционирование в чем мы занимаемся*/
+.activity {
+  position: relative;
+  height: 294px;
+  &-link {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 370px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    .link {
+      color: $primary-white-color;
+      transition: color 250ms $timing-function;
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .activity {
+    height: 294px;
+    outline: 1px solid tomato;
+  }
+}
+
+.doing-title {
+  @extend %doing-team-title;
+}
