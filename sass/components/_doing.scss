@@ -60,10 +60,11 @@
 @media screen and (min-width: 1200px) {
   .activity {
     height: 294px;
-    outline: 1px solid tomato;
+    //outline: 1px solid tomato;
   }
 }
 
 .doing-title {
   @extend %doing-team-title;
+  text-align: center;
 }

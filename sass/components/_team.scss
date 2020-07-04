@@ -2,22 +2,30 @@
 .container-bgd {
   background-color: $primary-white-color;
 }
+
+.team {
+  background-color: #f5f4fa;
+}
+
 .container.container-people {
   @media screen and (min-width: 768px) {
     width: 768px;
+    margin-top: 60px;
     //display: flex;
     //flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    margin-top: 0px;
   }
   //padding-left: 0px;
-  margin-top: 50px;
+
+  padding-bottom: 30px;
 }
 
 .container-team {
   @media screen and (min-width: 768px) {
-    width: 768px;
+    //width: 768px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -39,8 +47,11 @@
 
 /* Карточка сотрудника */
 .people {
-  margin-bottom: 0px;
+  background-color: $primary-white-color;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
   padding-left: 0px;
+
   /*width: 270px;*/
   //margin-right: 30px;
   border-radius: 8px;
@@ -87,10 +98,10 @@
 }
 
 .team-title {
-  @media screen and (max-width: 767px) {
-    padding-top: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
   }
-  padding-top: 94px;
 }
 
 .social-links {
@@ -127,6 +138,10 @@
 }
 
 .social-icon {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 24px;
+  width: 206px;
   display: flex;
   justify-content: space-evenly;
   @media screen and (max-width: 767px) {
@@ -138,10 +153,10 @@
 
 .team-title {
   @extend %doing-team-title;
+  text-align: center;
   @media screen and (max-width: 767px) {
     font-size: 28px;
     line-height: 1.18;
-    text-align: center;
   }
 }
 
@@ -151,7 +166,7 @@
 
 .div-people {
   height: 320px;
-  outline: 1px solid tomato;
+  //outline: 1px solid tomato;
   @media screen and (min-width: 768px) {
     height: 260px;
   }

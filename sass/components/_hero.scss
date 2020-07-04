@@ -2,23 +2,39 @@
   //display: flex;
   color: $primary-white-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.37;
+  //font-size: 26px;
+  //line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 480px;
-  height: 600px;
+  //width: 480px;
+  //height: 400px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin: auto;
+  }
+
   &-title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    /*padding-top: 200px;
-    padding: 200px 452px 30px 452px;*/
+    padding-top: 118px;
+    padding-bottom: 30px;
+    //padding: 200px 452px 30px 452px;
     margin: 0;
+    @media screen and (min-width: 768px) {
+      padding-left: 204px;
+      padding-right: 204px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-left: 252px;
+      padding-right: 252px;
+      padding-top: 200px;
+      font-size: 44px;
+    }
   }
 }
 
@@ -28,8 +44,8 @@
 }
 
 .overlay {
-  max-width: 480px;
-  height: 600px;
+  //max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -37,11 +53,33 @@
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url('../images/Header.jpg');
+    url('../images/Header_mob.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #212121;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url('../images/Header_tabl.jpg');
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url('../images/Header_desk.jpg');
+  }
 }
 
 .button.primery {
